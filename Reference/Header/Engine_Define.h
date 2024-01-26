@@ -31,6 +31,7 @@
 #include <crtdbg.h>
 
 #ifndef DBG_NEW 
+<<<<<<< HEAD
 
 #define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ ) 
 #define new DBG_NEW 
@@ -39,6 +40,13 @@
 #endif 
 
 #endif
+=======
+#define DBG_NEW new ( _NORMAL_BLOCK , __FILE__ , __LINE__ ) 
+#define new DBG_NEW 
+#endif 
+
+#endif // defined(_DEBUG) && !defined(_TOOL)
+>>>>>>> fb8432fb33753b6105f9001054a3b7f032c97c47
 
 using namespace std;
 using namespace Engine;
