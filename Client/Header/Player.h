@@ -35,12 +35,13 @@ private:
 	void			Check_State();
 	void			Adjust_IDLE();
 	void			Change_Texture();
+	void			Set_Scale();
 private:
 	Engine::CRcTex*		m_pBufferCom;
 	Engine::CTransform*	m_pTransformCom;
-	Engine::CTexture*	m_pTextureCom/*[PLAYERSTATE::STATE_END]*/;
+	Engine::CTexture*	m_pTextureCom[PLAYERLOOK::LOOK_END][PLAYERSTATE::STATE_END];
 	Engine::CCalculator*	m_pCalculatorCom;
-	Engine::CPlayerStatus*  m_pStatusCom;
+	/*Engine::CPlayerStatus*  m_pStatusCom;*/
 	_float				m_fFrame = 0.f;
 	_float				m_fFrameEnd;
 

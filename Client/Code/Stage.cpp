@@ -9,6 +9,7 @@
 #include "DynamicCamera.h"
 #include "SkyBox.h"
 #include "Effect.h"
+#include "Beefalo.h"
 
 CStage::CStage(LPDIRECT3DDEVICE9 pGraphicDev)
 	: Engine::CScene(pGraphicDev)
@@ -93,6 +94,10 @@ HRESULT CStage::Ready_Layer_GameLogic(const _tchar* pLayerTag)
 	NULL_CHECK_RETURN(pGameObject, E_FAIL);
 	FAILED_CHECK_RETURN(pLayer->Add_GameObject(L"Player", pGameObject), E_FAIL);
 	dynamic_cast<CDynamicCamera*>(m_pCamera)->SetTarget(pGameObject);
+
+	pGameObject = CBeefalo::Create(m_pGraphicDev);
+	NULL_CHECK_RETURN(pGameObject, E_FAIL);
+	FAILED_CHECK_RETURN(pLayer->Add_GameObject(L"Beefalo", pGameObject), E_FAIL);
 
 
 	for (_int i = 0; i < 50; ++i)

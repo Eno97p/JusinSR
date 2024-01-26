@@ -19,6 +19,7 @@ CTexture::CTexture(const CTexture & rhs)
 
 CTexture::~CTexture()
 {
+
 }
 
 HRESULT CTexture::Ready_Texture(TEXTUREID eType, const _tchar * pPath, const _uint & iCnt, const _uint& iNum)
@@ -60,7 +61,9 @@ void CTexture::Set_Texture(const _uint & iIndex)
 
 CComponent * CTexture::Clone()
 {
+
 	return new CTexture(*this);
+
 }
 
 CTexture * CTexture::Create(LPDIRECT3DDEVICE9 pGraphicDev, TEXTUREID eType, const _tchar * pPath, const _uint & iCnt, const _uint& iNum)

@@ -46,6 +46,12 @@
     <Filter Include="02. GameObject\06. Effect">
       <UniqueIdentifier>{69e88a4c-ddb1-4a70-a8a5-7d9df5c571a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="02. GameObject\01. Monster">
+      <UniqueIdentifier>{2cf06451-bdfd-47a2-825e-def6b3f27ace}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="02. GameObject\01. Monster\00. Beefalo">
+      <UniqueIdentifier>{c8274a41-4411-4b59-bb71-56e11738f9b4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -90,6 +96,9 @@
     <ClInclude Include="..\Header\Logo.h">
       <Filter>01. Scene\00. Logo</Filter>
     </ClInclude>
+    <ClInclude Include="..\Header\Beefalo.h">
+      <Filter>02. GameObject\01. Monster\00. Beefalo</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -124,6 +133,9 @@
     </ClCompile>
     <ClCompile Include="..\Code\Logo.cpp">
       <Filter>01. Scene\00. Logo</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Code\Beefalo.cpp">
+      <Filter>02. GameObject\01. Monster\00. Beefalo</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
