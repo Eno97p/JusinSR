@@ -1,5 +1,6 @@
 쥬신5개월차SR프로젝트
 ======================
+Youtube : https://youtu.be/h50NVoukoyE
 
 ## 1. Client 프로젝트 설정
 ### 1.1. Property
